@@ -1,0 +1,362 @@
+body{
+    font-family: Corbel, century gothic, Arial;
+    color: #363636;
+    font-size: 14pt;
+    color:#000;
+
+}
+
+a{
+	 text-decoration: none;
+}
+
+.sep {
+    max-width: 80px;
+    border: 2px solid #0d0d0d;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+
+/*=========================================
+=============> Intro
+==========================================*/
+
+
+div#intro{
+    background-image: url(../image/apresentacao1.jpg);
+    background-size: cover;
+}
+
+.intro {
+	 width:100%;
+	 height: 900px;
+
+} 
+
+
+div.intro h1{
+    background-color: #000;
+  	font-size: 80px ;
+  	color: #FFF;
+  	text-align: center;
+  	margin-top: 250px;
+  	margin-bottom: 60px;
+  }
+
+.inicio {
+  	left: 0;
+  	right: 0;
+  	text-align: center;
+ 	  z-index: 15;
+
+}
+ 
+
+a.btn-transparent {
+    color:#fff;
+    border: 3px solid #fff;
+  	padding: 15px 30px;
+  	font-size: 16px;
+
+}       
+
+a.btn-transparent:hover {
+  	background: #000;
+
+}
+
+
+
+/*=========================================
+=============> Header
+==========================================*/
+
+
+header {
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #252525;
+    z-index: 2;
+}
+
+ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+
+}
+
+li { 
+    display: inline;
+}
+
+li.menu_login{
+   float: right;
+}
+  
+a.login{
+    margin-right: 18px;
+    word-spacing: 3px;
+    color: #fff;
+
+}
+a.login:hover{
+    color:#8B0000;
+}
+
+a.menu{ 
+    font-size: 14pt;
+    padding: 15px;
+    font-family: Corbel, century gothic, Arial;
+    color: #fff;
+    word-spacing: 8px;
+    position: relative;
+
+}
+a.menu:active { 
+    color: #8B0000; 
+}
+
+/*=========================================
+=============> Welcome
+==========================================*/
+
+
+
+/*=========================================
+=============> Cardápio
+==========================================*/
+
+div.cardapio2{
+  	left: 0;
+  	right: 0;
+  	text-align: center;
+ 	  z-index: 15;
+
+}
+
+img.org-pratos {
+    width: 250px;
+    height: 250px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+main div {
+    padding: 50px;
+    max-width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+
+.centralizado {
+    display: flex;
+    justify-content: center;
+
+}
+
+.fade
+{
+    opacity:0.9;
+}
+.fade:hover
+{
+    opacity:1;
+    -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3);
+}
+
+
+
+/*=========================================
+=============> Onde Estamos
+==========================================*/
+
+p.endereco {
+  margin-left: 50px;
+}
+
+
+/*=========================================
+=============> Contato
+==========================================*/
+
+div.contato {
+    position:relative;
+    left:31%;
+    top:29%;
+    width:500px;
+    height:380px;
+   
+}
+
+
+div.contato #formulario {
+    position:absolute;
+    display:block;   
+}
+
+ 
+ 
+#formulario label {
+    position:absolute;
+    margin-right:10px;
+}
+ 
+ 
+#formulario input.nome {
+    position:absolute;
+    left:55px;
+    margin-top:2px;
+    width:400px;
+    font-size: 14pt;
+}
+
+#formulario input.email {
+    position:absolute;
+    left:55px;
+    margin-top:2px;
+    width:400px;
+    font-size: 14pt;
+}
+
+#formulario textarea.comentarios {
+    position:absolute;
+    left:55px;
+    margin-top:2px;
+    width:400px;
+    font-size: 14pt;
+}
+
+ #formulario button.button {
+    font-family: Corbel, century gothic, Arial;
+    font-size: 12pt;
+    width:106px;
+    height: 27px;
+    left:90px;
+    color: #fff;
+    background-color: #000;
+
+ }
+
+ #formulario a.pag_comentarios{
+ 	  font-family: Corbel;
+ 	  color: #000;
+ }
+
+#formulario a.pag_comentarios:hover{
+    color: #8B0000
+}
+
+/*=========================================
+=============> Rodapé
+==========================================*/
+
+footer{
+    background-color: #252525;
+    width: 0 auto;
+    height: 350px;
+    text-align: center;
+}
+
+footer h1{
+    font-size: 80px ;
+  	color: #FFF;
+}
+
+footer h4{
+    color:#fff;
+}
+footer a.link_deneb{
+    color:#fff;
+}
+
+footer a.link_deneb:hover{
+    color:#8B0000;
+}
+
+
+
+/*=========================================
+=============> Login
+==========================================*/
+
+div.div_formulario_login {
+    position:absolute;
+    left:37%;
+    top:10%;
+    width:400px;
+    height:380px;
+   
+}
+
+
+div.div_formulario_login #formulario_login {
+    position:absolute;
+    display:block;
+    border-width:  1 solid:#fff;   
+}
+
+ 
+ 
+#formulario_login label {
+    left:19px;
+    margin-right:5px;
+}
+ 
+ 
+#formulario_login input.nome {
+    left:105px;
+    margin-top:2px;
+    width:200px;
+    font-size: 14pt;
+}
+
+#formulario_login input.senha{
+    left:105px;
+    margin-top:2px;
+    width:100px;
+    font-size: 14pt;
+}
+
+
+input.entrar{
+    font-family: Corbel, century gothic, Arial;
+    font-size: 12pt;
+    width:106px;
+    height: 27px;
+    left:90px;
+    color: #fff;
+    background-color: #000;
+
+ }
+
+
+
+/*=========================================
+=============> administrador 
+==========================================*/
+
+div.novo-prato{
+    position: relative; 
+    top:10%;
+    left: 150px;
+    width:100%;
+    height:50%;
+    font-size: 14pt;
+}
+
