@@ -99,7 +99,7 @@
     }
 
 
-      public function listarMensagens(){
+      public function listarMensagens(){ // Lista as mensagens ja escritas por usuarios no index publico
         $conexao = new conexao;
 
         $consulta = $this->pdo->query("SELECT * FROM contato");
@@ -109,7 +109,7 @@
         
       }
 
-      public function listarMensagensAdm(){
+      public function listarMensagensAdm(){ // Lista as mensagens na pagina do administrador possibilitando o delete das mesmas
         $conexao = new conexao;
 
         $consulta = $this->pdo->query("SELECT * FROM contato");
@@ -126,7 +126,7 @@
         }
       }
       
-      public function deletarMensagem(){
+      public function deletarMensagem(){ // Função que deleta as mensagens pela pagina do administrador
       try {
         $stmt = $this->pdo->prepare("DELETE FROM contato WHERE id_msg = :id_msg");
         $stmt->bindParam(':id_msg', $_POST['idmsg'], PDO::PARAM_INT); 
