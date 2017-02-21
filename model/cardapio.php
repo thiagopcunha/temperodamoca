@@ -79,7 +79,7 @@
         $this->imagem = $imagem;
     }
 
-    public function inserirPrato(){
+    public function inserirPrato(){  // insere o prato requirido no banco de dados
       $conexao = new conexao;
 
       
@@ -87,7 +87,7 @@
       $query->execute(); 
     }
 
-    public function deletarPrato(){
+    public function deletarPrato(){  // deleta o prato escolhido do banco de dados
       try {
         $stmt = $this->pdo->prepare('DELETE FROM cardapio WHERE id = :id');
         $stmt->bindParam(':id', $_POST['id'], PDO::PARAM_INT); 
@@ -101,7 +101,7 @@
 
     }
 
-    public function alterarPrato(){
+    public function alterarPrato(){  //altera os dados modificados dos pratos no banco de dados
       $conexao = new conexao;
 
       if(isset($_POST['id'], $_POST['nome'], $_POST['preco'], $_POST['descricao'])){
@@ -133,7 +133,7 @@
     }
 
 
-      public function listarCardapio(){
+      public function listarCardapio(){  // Lista o cardapio na pagina dos usuarios  (INDEX)
         $conexao = new conexao;
 
         $consulta = $this->pdo->query("SELECT * FROM cardapio");
@@ -176,7 +176,7 @@
         
       }
 
-      public function listarCardapioAdm(){
+      public function listarCardapioAdm(){  // Lista na pagina do administrador com as funçoes CRUD
         $conexao = new conexao;
 
         $consulta = $this->pdo->query("SELECT * FROM cardapio");

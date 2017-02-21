@@ -65,7 +65,7 @@
 		}
 
 
-		public function validar(){
+		public function validar(){  // Faz a autenticação de login do administrador
 			$conexao = new conexao;
 			$stmt = $this->pdo->prepare("SELECT * FROM administrador WHERE login = :login AND senha = :senha"); 
 			$stmt->bindParam(':login', $this->login, PDO::PARAM_STR);
@@ -89,7 +89,7 @@
 			} 
 		}
 
-		public function alterarUsuario(){
+		public function alterarUsuario(){  // Faz a alteração dos dados de login do administrador
 			$conexao = new conexao;
 
 			if(isset($_POST['id_adm'], $_POST['nome'], $_POST['email'], $_POST['login'], $_POST['senha'])){
@@ -125,9 +125,9 @@
  
 			$result = $select->fetchAll();
 
-			foreach($result as $linha){
+			foreach($result as $linha){ // formulario que contem as informações atuais do administrador como um preholder
 ?>
-				<form method="POST" action="alterarUsuario.php">
+				<form method="POST" action="alterarUsuario.php"> 
 						<br/><br/>
 				      
 				      	<h2> Alterar usuário </h2>
@@ -146,7 +146,8 @@
 
 		}
 
-		public function lerUsuario(){
+		public function lerUsuario(){  // formulario que contem as informações atualizadas do administrador como um preholder
+						// possibilitando uma nova alteração
 			$conexao = new conexao;
 
 			$select = $this->pdo->query("SELECT * FROM administrador where login ='{$_SESSION['login']}'");

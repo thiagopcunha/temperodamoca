@@ -41,9 +41,10 @@
     </head>
     <body>
 <?php 
-       require_once ('../model/mensagem.php');
+       require_once ('../model/mensagem.php');  // local onde a classe se encontra
 
-      echo "Obrigado.&nbsp;";
+      echo "Obrigado.&nbsp;";  
+      // comando que seta os dados e insere no banco de dados
       if(isset($_GET['nome'])){
         $ins = new Mensagem;
         $ins->setEmail($_GET['email']);
